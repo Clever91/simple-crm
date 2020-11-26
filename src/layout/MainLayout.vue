@@ -9,9 +9,9 @@
     </main>
 
     <div class="fixed-action-btn">
-      <a class="btn-floating btn-large blue" href="#">
+      <router-link class="btn-floating btn-large blue" to="/record">
         <i class="large material-icons">add</i>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
@@ -31,7 +31,6 @@ export default {
   methods: {
     toggleMenu () {
       this.isOpen = !this.isOpen
-      console.log(this.isOpen)
     }
   }
 }
